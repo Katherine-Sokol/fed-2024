@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui;
+  background-color: rgb(247, 179, 179);
+}
+
+.container {
+  margin: 100px;
+  background-color: rgb(255, 255, 255);
+  width: 360px;
+  border-radius: 20px;
+  text-align: left;
+  letter-spacing: 0%;
+}
+
+.menu-button {
+  width: 30px;
+  height: 30px;
+  margin-top: 56px;
+  margin-left: 28px;
+  border-width: 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+.main-title {
+  margin-top: 23px;
+  margin-left: 22px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.search-input {
+  margin-top: 17px;
+  margin-left: 24px;
+  margin-right: 20px;
+  width: 316px;
+  height: 44px;
+  padding: 15px;
+  border-width: 0px;
+  border-radius: 12px;
+  background: rgb(239, 239, 239);
+  color: rgb(153, 153, 153);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.menu-types {
+  margin-top: 29px;
+}
+
+.menu-position {
+  display: inline-block;
+  margin-left: 24px;
+}
+
+.position-img {
+  border-radius: 12px;
+  background: rgb(239, 239, 239);
+  width: 74px;
+  height: 74px;
+  padding: 18px;
+  opacity: 0.5;
+}
+
+.menu-position:hover .position-img {
+  background: rgb(234, 226, 183);
+  opacity: 1;
+}
+
+.position-title {
+  color: rgb(196, 196, 196);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.menu-position:hover .position-title {
+  color: rgb(0, 0, 0);
+}
+
+.menu-title {
+  margin-top: 32px;
+  margin-left: 24px;
+  color: rgb(0, 48, 73);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.menu-items {
+  margin-top: 26px;
+  margin-left: 24px;
+  padding-bottom: 91px;
+}
+
+.menu-item {
+  width: 316px;
+  height: 88px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px rgb(230, 230, 230);
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+
+.item-img {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-border {
+  border-width: 1px;
+  border-color: rgb(196, 196, 196);
+  border-style: dashed;
+}
+
+.item-title {
+  margin-bottom: 8px;
+  color: rgb(0, 48, 73);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.item-price {
+  color: rgb(214, 40, 40);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
