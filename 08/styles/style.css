@@ -33,9 +33,12 @@ body {
   line-height: 39px;
 }
 
+.menu-container {
+  padding-left: 24px;
+}
+
 .search-input {
   margin-top: 17px;
-  margin-left: 24px;
   margin-right: 20px;
   width: 316px;
   height: 44px;
@@ -55,7 +58,6 @@ body {
 
 .menu-position {
   display: inline-block;
-  margin-left: 24px;
 }
 
 .position-img {
@@ -87,7 +89,6 @@ body {
 
 .menu-title {
   margin-top: 32px;
-  margin-left: 24px;
   color: rgb(0, 48, 73);
   font-size: 20px;
   font-weight: 500;
@@ -96,7 +97,6 @@ body {
 
 .menu-items {
   margin-top: 26px;
-  margin-left: 24px;
   padding-bottom: 91px;
 }
 
