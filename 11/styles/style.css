@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgba(0, 161, 198, 0.05);
+}
+
+.container {
+  width: 1320px;
+  margin: 142px auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+h1 {
+  color: rgb(45, 54, 64);
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+h1 > span {
+  font-weight: 600;
+}
+
+.text {
+  margin-top: 10px;
+  width: 695px;
+  color: rgb(43, 41, 45);
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.developers {
+  margin-top: 50px;
+  font-family: Catamaran, sans-serif;
+  overflow: auto;
+}
+.developer {
+  margin-left: 20px;
+  float: inline-start;
+  width: 295px;
+  height: 470px;
+  border: 1px solid rgb(234, 237, 242);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(45, 54, 64, 0.05);
+  background: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.developer:first-child {
+  margin-left: 0px;
+}
+
+.developer-photo {
+  margin-top: 59px;
+  width: 114px;
+  height: 114px;
+  border-radius: 100%;
+  border: 3px solid rgb(237, 237, 237);
+}
+
+.name {
+  color: rgb(45, 54, 64);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: -0.63px;
+  margin-top: 37px;
+}
+
+.programming-direction {
+  color: rgb(75, 79, 82);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+
+.technologies {
+  margin-top: 33px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  margin-right: 15px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+}
+
+.logo:last-child {
+  margin-right: 0px;
+}
+
+.vue-js-logo {
+  background-color: rgb(65, 184, 131);
+  padding-top: 15px;
+}
+
+.angular-logo {
+  background-color: rgb(52, 71, 79);
+  padding-top: 10px;
+}
+
+.flutter-logo {
+  background-color: rgb(32, 33, 36);
+  padding-top: 10px;
+}
+
+.react-logo {
+  background-color: rgb(97, 218, 251);
+  padding-top: 9px;
+}
+
+.java-logo {
+  background-color: rgb(214, 48, 51);
+  padding-top: 7px;
+}
+
+.html-logo {
+  background-color: rgb(228, 78, 37);
+  padding-top: 12px;
+}
+
+.css-logo {
+  background-color: rgb(16, 115, 187);
+  padding-top: 11px;
+}
