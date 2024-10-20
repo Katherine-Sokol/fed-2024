@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  font-family: "Inter", serif;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  max-width: 1728px;
+  background-image: url(../img/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 42px 33px 49px 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 74px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  padding-left: 56px;
+  color: rgb(200, 200, 200);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.date::before {
+  content: "|";
+  margin-right: 23px;
+}
+
+.search-btn,
+.user {
+  background: none;
+  border: none;
+}
+
+.search-btn {
+  padding: 0px;
+  width: 43px;
+  height: 43px;
+  color: rgb(255, 255, 255);
+}
+
+.user {
+  padding-left: 45px;
+}
+
+main {
+  padding-top: 100px;
+}
+
+.categories  {
+  display:flex;
+}
+
+.categories h2 {
+  font-size: 29px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+h2:not(h2:last-child)::after {
+content: "|";
+margin: 0 26px;
+
+}
+
+h1 {
+  padding-bottom: 17px;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 77px;
+  letter-spacing: 5px;
+  text-align: left;
+}
+
+.details {
+  max-width: 847px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: row wrap;
+  padding-bottom: 8px;
+}
+
+.details p {
+  color: rgb(167, 166, 166);
+  font-size: 29px;
+  font-weight: 400;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.details p > strong {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.about {
+  max-width: 864px;
+  color: rgb(167, 166, 166);
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  padding-bottom: 29px;
+}
+
+.stars {
+  padding-bottom: 53px;
+}
+
+.stars .active {
+  color: rgb(255, 234, 43);
+}
+
+.stars i {
+  margin-right: 17px;
+}
+
+.stars i:last-child {
+  margin-right: 0;
+}
+
+
+.watch-episodes {
+  display: flex;
+  padding-bottom: 54px;
+}
+
+.watch-episodes button {
+  width: 271px;
+  height: 64px;
+  left: 402px;
+  top: 682px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background: none;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  margin-right: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch-episodes i {
+  margin-left: 10px;
+}
+
+.watch-episodes button:hover {
+  background: rgb(213, 13, 31);
+  border: none;
+}
+
+.title {
+  max-width: 955px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+}
+
+.arrows {
+  display: flex;
+}
+
+.arrow:last-child {
+  margin-left: 24px;
+}
+
+.title h4 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 31px;
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+.arrow {
+  height: 38px;
+  width: 38px;
+  border: 1.42px solid rgb(167, 166, 166);
+  border-radius: 100px;
+  background: none;
+  text-align: center;
+  padding-top: 5px;
+  color: rgb(167, 166, 166);
+}
+
+.arrow:hover {
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.movies {
+  max-width: 955px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.age-limit {
+  width: 174px;
+  height: 66px;
+  background: rgba(255, 255, 255, 0.49);
+  border-left: 33px solid rgb(213, 13, 31);
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 26px;
+  font-weight: 500;
+  line-height: 31px;
+  position: fixed;
+  bottom: 100px;
+  right: 0px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-list img {
+  margin-right: 50px;
+  margin-bottom: 50px;
+  width: 151px;
+  height: 100%;
+}
+.movie-list img:last-child{
+  margin-right: 0px;
+}
