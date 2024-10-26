@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  background: none;
+  border: none;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 7.5rem;
+  position: relative;
+}
+
+header {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: rgb(188, 67, 106);
+  font-family: Open Sans, sans-serif;
+  font-size: 1.13rem;
+  font-weight: 700;
+  line-height: 1.56rem;
+  text-align: left;
+  padding-right: 3rem;
+}
+
+.selected {
+  color: rgb(188, 67, 106);
+  font-weight: 800;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+header div {
+  color: rgb(119, 102, 119);
+  line-height: 1.38rem;
+  text-align: center;
+  padding: 0.5rem;
+  margin-right: 2.5rem;
+  flex-wrap: wrap;
+}
+
+header div:last-child {
+  margin-right: 0;
+}
+
+header div:hover {
+  color: rgb(255, 255, 255);
+  border-radius: 0.25rem;
+  background: rgb(56, 110, 65);
+}
+
+.main-content {
+  max-width: 50%;
+  padding: 9.37rem 4.81rem 2rem 0;
+}
+
+.main-content h1 {
+  color: rgb(51, 51, 51);
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 3.06rem;
+  text-align: left;
+  margin-bottom: 1.44rem;
+}
+
+.main-content h1 strong {
+  color: rgb(188, 67, 106);
+}
+
+.main-content p {
+  color: rgb(122, 122, 122);
+  font-size: 1.13rem;
+  line-height: 1.56rem;
+  text-align: left;
+}
+
+.where-to-go {
+  padding-top: 14.3rem;
+}
+
+.where-to-go i {
+  width: 0.38rem;
+  height: 0.75rem;
+  color: rgb(119, 102, 119);
+  margin-left: 2rem;
+}
+
+form {
+  max-width: 75rem;
+  height: 6.25rem;
+  border-radius: 0.5rem;
+  background: rgb(56, 110, 65);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4.5rem;
+}
+
+input {
+  border-bottom: 0.06rem solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  width: 15.8rem;
+  font-size: 1.13rem;
+  line-height: 1.56rem;
+  text-align: left;
+  padding: 0.25rem 0 0.75rem;
+}
+
+input::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 1.13rem;
+  line-height: 1.56rem;
+  text-align: left;
+}
+
+form i {
+  width: 0.75rem;
+  height: 0.38rem;
+  color: rgb(255, 255, 255);
+  margin-left: -1.75rem;
+}
+
+form button {
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0rem 1.25rem 0rem rgba(0, 0, 0, 0.11);
+  background: rgb(188, 67, 106);
+  width: 9.06rem;
+  height: 2.56rem;
+  color: rgb(255, 255, 255);
+  font-size: 1.13rem;
+  line-height: 1.56rem;
+}
+
+footer {
+  text-align: center;
+  color: rgb(118, 118, 118);
+  font-size: 1.13rem;
+  line-height: 1.56rem;
+  padding-bottom: 2.56rem;
+}
+
+footer h6 {
+  margin-bottom: 0.5rem;
+}
+
+footer i {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: rgb(118, 118, 118);
+}
+
+.rectangle {
+  position: absolute;
+  width: 7.5rem;
+  height: 7.5rem;
+  left: -2.19rem;
+  top: 32.56rem;
+  border: 0.63rem solid rgb(56, 110, 65);
+}
+
+.picture {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  max-width: 50%;
+  height: 100vh;
+  max-height: 50.75rem;
+  right: -6.31rem;
+  top: 7.69rem;
+  border-radius: 100%;
+  background: url(../img/picture.jpeg), rgb(196, 196, 196);
+  background-position: -15rem 0rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    max-width: 60%;
+  }
+
+  .picture {
+    height: 100vh;
+    max-height: 36rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  form {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+
+  form div {
+    margin-bottom: 2rem;
+  }
+
+  input {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 24px;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    flex-direction: column;
+  }
+
+  header div {
+    margin: 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .main-content {
+    max-width: 100%;
+    padding: 0;
+  }
+  .main-content h1,
+  .main-content p {
+    text-align: center;
+  }
+
+  .picture {
+    position: relative;
+    max-width: 20rem;
+    max-height: 20rem;
+    right: 0;
+    top: 1rem;
+    background-position: -5rem 0rem;
+    margin: 0 auto;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .where-to-go {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    max-width: 30rem;
+    margin-bottom: 2rem;
+  }
+
+  input {
+    max-width: 24rem;
+  }
+}
+
+@media (max-width: 391px) {
+  .picture {
+    position: relative;
+    max-width: 12rem;
+    max-height: 12rem;
+  }
+
+  .where-to-go i {
+    margin-left: 0.5rem;
+  }
+
+  input {
+    max-width: 12rem;
+  }
+}
