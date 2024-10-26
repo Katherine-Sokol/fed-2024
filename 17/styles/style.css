@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  position: relative;
+}
+
+.left,
+.right {
+  position: absolute;
+}
+
+main {
+  padding: 0 25px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
+
+/* HEADER */
+
+.logo {
+  width: 163px;
+  height: 42px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 42px;
+  margin-left: 61px;
+}
+
+.header-nav {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  display: none;
+}
+
+.header-nav a {
+  margin-right: 46px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 43px 32px 36px;
+  justify-content: space-between;
+}
+
+.header-img svg {
+  margin-left: 22px;
+}
+
+.menu {
+  display: block;
+}
+
+@media (min-width: 1501px) {
+  .menu {
+    display: none;
+  }
+
+  .header-nav {
+    display: block;
+  }
+
+  header {
+    padding: 43px 32px 36px;
+  }
+
+  .header-img {
+    margin-left: auto;
+  }
+}
+
+/* MAIN */
+
+.left {
+  width: 216px;
+  height: 258px;
+  left: -22px;
+  top: 121px;
+  transform: rotate(2.74deg);
+}
+
+.right {
+  width: 242px;
+  height: 288px;
+  top: 187px;
+  right: -37px;
+  transform: scaleX(-1) rotate(7deg);
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: -3px;
+  margin: 411px auto 8px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.text {
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.shop-btn {
+  border-radius: 15px;
+  width: 195px;
+  height: 50px;
+  background: rgb(0, 0, 0);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  display: block;
+  margin: 34px auto 40px auto;
+}
+
+@media (min-width: 1512px) {
+  .left {
+    width: 599.82px;
+    height: 428.14px;
+    left: 398px;
+    top: 179px;
+    transform: rotate(5.89deg);
+  }
+
+  .right {
+    width: 381.99px;
+    height: 341.62px;
+    right: 45px;
+    top: 121px;
+    transform: scaleX(-1) rotate(-14deg);
+  }
+
+  h1 {
+    margin: 234px 0px 4px;
+    text-align: left;
+    width: 301px;
+  }
+
+  .main {
+    text-align: left;
+    width: 301px;
+  }
+
+  .shop-btn {
+    margin: 25px 0 144px;
+  }
+}
+
+.women-shoe,
+.men-shoe {
+  width: 342px;
+  height: 342px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.women-shoe {
+  background-image: url(../img/women-shoe.png);
+  margin: 0 auto 25px;
+}
+
+.men-shoe {
+  background-image: url(../img/men-shoe.png);
+  margin: 0 auto 45px;
+}
+
+.women-shoe h4,
+.men-shoe h4 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+.women-shoe p {
+  text-align: end;
+  align-self: flex-end;
+  padding-right: 10px;
+  padding-bottom: 13px;
+}
+
+.men-shoe p {
+  padding-left: 20px;
+  padding-bottom: 13px;
+}
+
+.women-shoe:hover p,
+.men-shoe:hover p {
+  color: black;
+}
+
+@media (min-width: 980px) {
+  .shop-shoes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .men-shoe,
+  .women-shoe {
+    width: 49.5%;
+    margin: 0 0 62px;
+    height: 454px;
+  }
+
+  h1 {
+    margin: 170px 0px 4px;
+  }
+}
+
+.category h2 {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+.items article {
+  margin-right: 16px;
+}
+
+.items img {
+  width: 252px;
+  height: 252px;
+}
+
+.items h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+
+.items p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+.topic {
+  display: block;
+  margin: 85px auto 15px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+  width: 235px;
+}
+
+.news {
+  width: 342px;
+  margin: 0 auto 22px;
+}
+
+.mail {
+  margin: 0 auto 80px;
+  width: 235px;
+  height: 55px;
+  border: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-top: 12px;
+}
+
+@media (min-width: 1512px) {
+  .category h2 {
+    margin-bottom: 30px;
+  }
+
+  .items img {
+    width: 300px;
+  }
+
+  .mail {
+    margin-bottom: 156px;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  margin: 0;
+  background-color: black;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 47px;
+}
+
+footer nav {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  width: 162px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav h4 {
+  color: rgb(196, 196, 196);
+  opacity: 0.5;
+}
+
+.footer-nav nav {
+  margin-bottom: 29px;
+}
+
+footer nav:nth-child(odd) {
+  margin-right: 16px;
+}
+
+footer nav a {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+}
+
+.follow-us {
+  margin-top: -14px;
+  margin-left: 25px;
+  padding-bottom: 43px;
+}
+
+.follow-us div {
+  display: flex;
+  flex-direction: row;
+}
+
+.follow-us h4 {
+  margin-bottom: 10px;
+}
+
+.follow-us a {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 100px;
+  text-align: center;
+  color: black;
+  margin-right: 13px;
+}
+
+.rights {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  opacity: 0.4;
+  padding-bottom: 12px;
+}
+
+@media (min-width: 1512px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 63px;
+  }
+
+  .footer-nav {
+    padding-top: 0;
+    margin-left: 24px;
+  }
+
+  footer nav:nth-child(n) {
+    margin-right: 85px;
+    margin-bottom: 0;
+  }
+
+  .navigation {
+    margin-bottom: 78px;
+  }
+
+  .rights {
+    padding-bottom: 20px;
+  }
+}
