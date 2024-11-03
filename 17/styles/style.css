@@ -17,6 +17,9 @@ body {
 
 main {
   padding: 0 25px;
+  overflow-x: hidden;
+  min-width: 390px;
+  position: relative;
 }
 
 a {
@@ -95,14 +98,13 @@ header {
   width: 216px;
   height: 258px;
   left: -22px;
-  top: 121px;
   transform: rotate(2.74deg);
 }
 
 .right {
   width: 242px;
   height: 288px;
-  top: 187px;
+  top: 66px;
   right: -37px;
   transform: scaleX(-1) rotate(7deg);
 }
@@ -147,7 +149,7 @@ p {
     width: 599.82px;
     height: 428.14px;
     left: 398px;
-    top: 179px;
+    top: 58px;
     transform: rotate(5.89deg);
   }
 
@@ -155,7 +157,6 @@ p {
     width: 381.99px;
     height: 341.62px;
     right: 45px;
-    top: 121px;
     transform: scaleX(-1) rotate(-14deg);
   }
 
