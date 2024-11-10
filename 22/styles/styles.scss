@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: rgb(15, 137, 250);
+  background-color: black;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.container {
+  margin: 5rem auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 42rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+button {
+  border: 0.13rem solid rgb(15, 137, 250);
+  background: none;
+  padding: 1rem 2rem;
+  color: rgb(15, 137, 250);
+  transition: 1s;
+}
+
+.fill-in:hover {
+  background: rgb(15, 137, 250);
+  color: rgb(255, 255, 255);
+}
+
+.fill-up:hover {
+  background: rgb(15, 137, 250);
+  color: rgb(255, 255, 255);
+  box-shadow: inset 0 -3.25rem 0 0 rgb(15, 137, 250);
+}
+
+.slide:hover {
+  background: rgb(15, 137, 250);
+  color: rgb(255, 255, 255);
+  box-shadow: inset 6.5em 0 0 0 rgb(15, 137, 250);
+}
+
+.raise:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em rgb(15, 137, 250);
+  transform: translateY(-0.25em);
+}
+
+.close:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: inset -3.75em 0 0 0 rgb(15, 137, 250),
+    inset 3.75em 0 0 0 rgb(15, 137, 250);
+}
+
+.glowing:hover {
+  box-shadow: 0rem 0rem 0.5rem 0.25rem rgb(15, 137, 250);
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 rgb(15, 137, 250),
+    inset 0.3em 0.3em 0 0 rgb(15, 137, 250);
+
+  &:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 0 rgb(15, 137, 250), inset 7em 4em 0 0 rgb(15, 137, 250);
+  }
+}
+
+.hover-me {
+  position: relative;
+  border: none;
+  mix-blend-mode: difference;
+  &::before {
+    transition: all 0.5s linear;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: rgb(15, 137, 250);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  & .btn-text {
+    color: rgb(15, 137, 250);
+    mix-blend-mode: difference;
+  }
+  &:hover {
+    &::before {
+      background: rgb(15, 137, 250);
+      width: 100%;
+    }
+  }
+}
+
+.hover-me-circle {
+  position: relative;
+  border: none;
+  border-radius: 5rem;
+  color: white;
+  &::before {
+    transition: all 0.5s linear;
+    content: "";
+    height: 100%;
+    background: rgb(15, 137, 250);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5rem;
+    width: 40%;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.notify-me {
+  background: rgb(15, 137, 250);
+  color: black;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: attr(data-hover);
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, -100%);
+    transition: all 0.3s linear;
+  }
+  &:hover p {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  p {
+    transition: all 0.3s linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+.explore-more-color {
+  color: white;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    transform: skewX(30deg);
+    transition: all 0.2s linear;
+    z-index: -2;
+  }
+  &::before {
+    background-color: rgb(81, 184, 81);
+    top: -0.75rem;
+    left: -0.75rem;
+  }
+  &::after {
+    background-color: rgb(15, 137, 250);
+    top: 0.75rem;
+    left: 4.5rem;
+  }
+  &:hover {
+    &::before,
+    &::after {
+      top: 0;
+      transform: rotateY(180deg);
+      width: 50%;
+    }
+    &::after {
+      left: 0rem;
+    }
+    &::before {
+      left: 4.5rem;
+    }
+  }
+}
+
+.zoom {
+  font-size: 0.75rem;
+  line-height: 1.13rem;
+  &:hover {
+    scale: 1.1 1.1;
+  }
+}
+
+.fancy-button {
+  display: block;
+  position: relative;
+
+  &__horizontal,
+  &__vertical {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    bottom: -10px;
+    left: 10px;
+    transition: transform 1s ease;
+    will-change: transform;
+  }
+
+  &__horizontal {
+    border-top: 2px solid currentcolor;
+    border-bottom: 2px solid currentcolor;
+  }
+
+  &:hover &__horizontal {
+    transform: scaleX(0);
+  }
+
+  &__vertical {
+    border-left: 2px solid currentcolor;
+    border-right: 2px solid currentcolor;
+  }
+
+  &:hover &__vertical {
+    transform: scaleY(0);
+  }
+}
+
+.explore-more {
+  padding: 1rem 1.25rem;
+  margin: 0 auto 0 0.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  i {
+    display: none;
+  }
+
+  &:hover {
+    background: rgb(15, 137, 250);
+    color: rgb(255, 255, 255);
+
+    i {
+      display: block;
+      margin-left: 0.6rem;
+    }
+  }
+}
