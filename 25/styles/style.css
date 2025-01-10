@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Zen+Kaku+Gothic+New&display=swap");
+
+body {
+  font-size: 16px;
+}
+
+header {
+  background-color: rgb(102, 142, 104);
+}
+
+.logo {
+  color: rgb(255, 255, 255);
+  font-family: Georgia;
+  font-size: 2.75rem;
+  font-weight: 400;
+  line-height: 3.13rem;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.navigation a {
+  color: rgb(255, 255, 255);
+  font-family: "Zen Kaku Gothic New", serif;
+  font-size: 1.13rem;
+  font-weight: 500;
+  line-height: 1.81rem;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.top-bg-section {
+  height: 32.5rem;
+  background-image: url(../img/coffee.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.top-bg-section h1 {
+  color: #fff;
+  text-shadow: 0.13rem 0.13rem 0.13rem rgba(0, 0, 0, 0.7);
+  font-family: Shadows Into Light;
+  font-size: 6.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu h3,
+.menu h4,
+.news h3,
+.news h4 {
+  color: rgb(0, 0, 0);
+}
+
+.menu h3,
+.about h3,
+.news h3 {
+  font-family: Shadows Into Light;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2rem;
+}
+
+.menu h4,
+.about h4,
+.news h4 {
+  font-family: Yu Gothic;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2.19rem;
+}
+
+.menu-item {
+  color: rgb(0, 0, 0);
+  font-family: Georgia;
+  font-size: 1.63rem;
+  font-weight: 400;
+  line-height: 1.88rem;
+  border: 0.56rem solid rgb(129, 97, 59);
+}
+
+.button {
+  background-color: rgb(102, 142, 104);
+  color: rgb(255, 255, 255);
+}
+
+.button:hover {
+  background-color: rgb(102, 142, 104, 0.8);
+}
+
+.about {
+  height: 32.5rem;
+  background-image: url(../img/cafe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 9rem;
+  padding-top: 8.6rem;
+}
+
+.about h3,
+.about h4 {
+  color: rgb(255, 255, 255);
+}
+.about p {
+  color: rgb(255, 255, 255);
+  text-shadow: 0.13rem 0.13rem 0.13rem rgba(0, 0, 0, 0.7);
+  font-family: "Zen Kaku Gothic New", serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.63rem;
+}
+
+.news {
+  background-color: rgba(129, 97, 59, 0.2);
+}
+
+.news p {
+  color: rgb(0, 0, 0);
+  font-family: "Zen Kaku Gothic New", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.63rem;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+footer .contacts {
+  color: rgb(255, 255, 255);
+  font-family: "Zen Kaku Gothic New", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.56rem;
+}
+
+footer .rights {
+  color: rgb(255, 255, 255);
+  font-family: Georgia;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.13rem;
+}
+
+.up {
+  background-color: rgb(102, 142, 104);
+}
+
+.up a {
+  color: rgb(255, 255, 255);
+}
