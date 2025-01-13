@@ -240,8 +240,10 @@ button {
   flex-direction: row;
   justify-content: center;
   
-  i {
-    display: none;
+  i{
+    color: transparent;
+    margin-left: -0.6rem;
+    transition: 1s;
   }
 
   &:hover {
@@ -249,8 +251,8 @@ button {
     color: rgb(255, 255, 255);
 
     i {
-      display: block;
       margin-left: 0.6rem;
+      color: rgb(255, 255, 255);
     }
   }
 }
