@@ -77,7 +77,6 @@ button {
 .hover-me {
   position: relative;
   border: none;
-  mix-blend-mode: difference;
   &::before {
     transition: all 0.5s linear;
     content: "";
@@ -87,16 +86,27 @@ button {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
   }
 
-  & .btn-text {
+  & .btn-text-white {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: start;
+  }
+
+  & .btn-text-blue {
     color: rgb(15, 137, 250);
-    mix-blend-mode: difference;
+    transition: all 0.5s linear;
   }
   &:hover {
     &::before {
       background: rgb(15, 137, 250);
       width: 100%;
+    }
+
+    & .btn-text-blue {
+      color: rgb(255, 255, 255);
     }
   }
 }
@@ -203,7 +213,6 @@ button {
   display: block;
   position: relative;
 
-  &__horizontal,
   &__vertical {
     position: absolute;
     top: -10px;
@@ -214,13 +223,36 @@ button {
     will-change: transform;
   }
 
-  &__horizontal {
+  &__horizontal-left {
+    position: absolute;
+    top: -10px;
+    right: 65px;
+    bottom: -10px;
+    left: 10px;
+    transition: right 1s ease;
+  }
+
+  &__horizontal-right {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    bottom: -10px;
+    left: 75px;
+    transition: left 1s ease;
+  }
+
+  &__horizontal-left,
+  &__horizontal-right {
     border-top: 2px solid currentcolor;
     border-bottom: 2px solid currentcolor;
   }
 
-  &:hover &__horizontal {
-    transform: scaleX(0);
+  &:hover &__horizontal-left {
+    right: 135px;
+  }
+
+  &:hover &__horizontal-right {
+    left: 135px;
   }
 
   &__vertical {
@@ -239,8 +271,8 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
-  i{
+
+  i {
     color: transparent;
     margin-left: -0.6rem;
     transition: 1s;
