@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action=""
+      class="color-form"
+    >
+      <p>Select background-color:</p>
+      <div>
+        <input
+          type="radio"
+          name="color"
+          id="yellow"
+          value="yellow"
+        />
+        <label for="yellow">yellow</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="color"
+          id="blue"
+          value="blue"
+        />
+        <label for="blue">blue</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="color"
+          id="red"
+          value="red"
+        />
+        <label for="red">red</label>
+      </div>
+    </form>
+
+    <div class="hobby-form">
+      <h3>Select hobby:</h3>
+      <div>
+        <label for="h1">
+          <input
+            type="checkbox"
+            name="hobby"
+            id="h1"
+            value="reading"
+          />
+          reading
+        </label>
+      </div>
+      <div>
+        <label for="h2">
+          <input
+            type="checkbox"
+            name="hobby"
+            id="h2"
+            value="sport"
+          />
+          sport
+        </label>
+      </div>
+      <div>
+        <label for="h3">
+          <input
+            type="checkbox"
+            name="hobby"
+            id="h3"
+            value="music"
+          />
+          music
+        </label>
+      </div>
+      <button class="showResult">Show hobby</button>
+      <p class="resultBox"></p>
+    </div>
+
+    <div>
+      <h3>Select country</h3>
+      <select
+        name="countries"
+        id="countries"
+      >
+        <option value="Ukraine">Ukraine</option>
+        <option value="UK">UK</option>
+        <option value="USA">USA</option>
+      </select>
+      <p class="result"></p>
+    </div>
+
+    <form
+      action=""
+      class="rating-form"
+    >
+      <p>Rate the quality of service:</p>
+      <div>
+        <input
+          type="radio"
+          name="rate"
+          id="one"
+          value="1"
+        />
+        <label for="one">1</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="rate"
+          id="two"
+          value="2"
+        />
+        <label for="two">2</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="rate"
+          id="three"
+          value="3"
+        />
+        <label for="three">3</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="rate"
+          id="four"
+          value="4"
+        />
+        <label for="four">4</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="rate"
+          id="five"
+          value="5"
+        />
+        <label for="five">5</label>
+      </div>
+    </form>
+
+    <form action="">
+      <h1>Order your pizza</h1>
+      <label for="types">Choose type:</label>
+      <select
+        name="types"
+        id="types"
+      >
+        <option value="Cheesy">Cheesy</option>
+        <option value="Neapolitan">Neapolitan</option>
+        <option value="Margherita">Margherita</option>
+      </select>
+      <div class="pizza-size">
+        <p>Select size:</p>
+        <div>
+          <input
+            type="radio"
+            name="size"
+            id="s"
+            value="small"
+          />
+          <label for="s">Small</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="size"
+            id="m"
+            value="medium"
+          />
+          <label for="m">Medium</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="size"
+            id="l"
+            value="large"
+          />
+          <label for="l">Large</label>
+        </div>
+      </div>
+      <div class="pizza-fillings">
+        <p>Select additional filling:</p>
+        <div>
+          <input
+            type="checkbox"
+            name="filling"
+            id="pepper"
+            value="pepper"
+          />
+          <label for="pepper">pepper</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="filling"
+            id="tomato"
+            value="tomato"
+          />
+          <label for="tomato">tomato</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="filling"
+            id="olives"
+            value="olives"
+          />
+          <label for="olives">olives</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="filling"
+            id="pineapple"
+            value="pineapple"
+          />
+          <label for="pineapple">pineapple</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="filling"
+            id="cheese"
+            value="cheese"
+          />
+          <label for="cheese">cheese</label>
+        </div>
+      </div>
+      <button class="order">Make an order</button>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
