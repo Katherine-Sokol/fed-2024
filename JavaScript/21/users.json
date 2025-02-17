@@ -1,0 +1,9 @@
+{
+  "name": "Mark",
+  "age": 32,
+  "mail": "mark@mail.com",
+  "children": [
+    { "name": "Alice", "age": 2 },
+    { "name": "Kate", "age": 5 }
+  ]
+}
