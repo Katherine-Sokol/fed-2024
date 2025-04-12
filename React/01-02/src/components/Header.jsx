@@ -1,30 +1,33 @@
 import React from "react";
+import logo from "../assets/logo.png";
+import searchBtn from "../assets/search-btn.svg";
+import userPhoto from "../assets/user-photo.png";
 
 const Header = () => {
   return (
     <header>
       <div>
         <a
-          class="logo"
+          className="logo"
           href="#"
         >
           <img
-            src="img/logo.png"
+            src={logo}
             alt="logo"
           />
         </a>
-        <span class="date">| Friday July 8th</span>
+        <span className="date">| Friday July 8th</span>
       </div>
       <div>
-        <button class="search-btn">
+        <button className="search-btn">
           <img
-            src="img/search-btn.svg"
+            src={searchBtn}
             alt="search-btn"
           />
         </button>
-        <button class="user">
+        <button className="user">
           <img
-            src="img/user-photo.png"
+            src={userPhoto}
             alt="user-photo"
           />
         </button>

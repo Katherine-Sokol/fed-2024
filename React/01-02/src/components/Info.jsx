@@ -8,7 +8,7 @@ class Info extends Component {
       <div>
         <h2>Drama | Thriller | Supernatural</h2>
         <h1>Stranger Things</h1>
-        <div class="details">
+        <div className="details">
           <p>
             <strong>2019 </strong>
           </p>
@@ -19,7 +19,7 @@ class Info extends Component {
             <strong>seasons:</strong> 3 (5 Episodes)
           </p>
         </div>
-        <p class="about">
+        <p className="about">
           In 1980s Indiana, a group of young friends witness supernatural forces
           and secret government exploits. As they search for answers, the
           children unravel a series of extraordinary mysteries.

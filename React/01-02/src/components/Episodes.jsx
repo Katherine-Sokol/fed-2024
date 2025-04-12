@@ -1,12 +1,13 @@
 import React from "react";
+import playImage from "../assets/play-img.png";
 
 const Episodes = () => {
   return (
-    <div class="watch-episodes">
+    <div className="watch-episodes">
       <button>
         STREAM NOW
         <img
-          src="img/play-img.png"
+          src={playImage}
           alt="play-img"
         />
       </button>
