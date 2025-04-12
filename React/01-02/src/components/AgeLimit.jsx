@@ -1,7 +1,7 @@
 import React from "react";
 
-const AgeLimit = () => {
-  return <span className="age-limit">16+</span>;
+const AgeLimit = (props) => {
+  return <span className="age-limit">{props.age}</span>;
 };
 
 export default AgeLimit;

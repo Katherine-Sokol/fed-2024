@@ -2,8 +2,10 @@ import React from "react";
 import logo from "../assets/logo.png";
 import searchBtn from "../assets/search-btn.svg";
 import userPhoto from "../assets/user-photo.png";
+import CurrentDate from "./CurrentDate";
 
 const Header = () => {
+  let date = new Date(Date.now());
   return (
     <header>
       <div>
@@ -16,7 +18,9 @@ const Header = () => {
             alt="logo"
           />
         </a>
-        <span className="date">| Friday July 8th</span>
+        <CurrentDate
+          date={`| ${date.toDateString()}`}
+        ></CurrentDate>
       </div>
       <div>
         <button className="search-btn">

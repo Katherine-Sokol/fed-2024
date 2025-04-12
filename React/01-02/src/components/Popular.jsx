@@ -73,7 +73,7 @@ const Popular = () => {
             alt="img"
           />
         </div>
-        <AgeLimit></AgeLimit>
+        <AgeLimit age="16+"></AgeLimit>
       </div>
     </div>
   );
