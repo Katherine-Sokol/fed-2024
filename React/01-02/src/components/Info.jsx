@@ -5,7 +5,7 @@ import Episodes from "./Episodes";
 const Info = (props) => {
   return (
     <div>
-      <h2>{props.genre}</h2>
+      <h2>{props.genre.join(" | ")}</h2>
       <h1>{props.title}</h1>
       <div className="details">
         <p>
