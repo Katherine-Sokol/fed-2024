@@ -3,9 +3,33 @@ import logo from "../assets/logo.png";
 import searchBtn from "../assets/search-btn.svg";
 import userPhoto from "../assets/user-photo.png";
 import CurrentDate from "./CurrentDate";
+import { useState } from "react";
 
 const Header = () => {
   let date = new Date(Date.now());
+
+  let [showSearch, setShowSearch] = useState(false);
+  function changeShowSearch() {
+    setShowSearch((showSearch) => !showSearch);
+    if (showSearch == true) {
+      setShowResult((showResult) => (showResult = false));
+    }
+  }
+  let [result, setResult] = useState("");
+  let [showResult, setShowResult] = useState(false);
+  function changeShowResult(event) {
+    if (event.keyCode == 13) {
+      if (event.target.value.length > 3) {
+        if (showResult == false) {
+          setShowResult((showResult) => !showResult);
+        }
+        setResult((result) => (result = event.target.value));
+      } else {
+        setShowResult((showResult) => (showResult = false));
+      }
+    }
+  }
+
   return (
     <header>
       <div>
@@ -18,17 +42,27 @@ const Header = () => {
             alt="logo"
           />
         </a>
-        <CurrentDate
-          date={`| ${date.toDateString()}`}
-        ></CurrentDate>
+        <CurrentDate date={`| ${date.toDateString()}`}></CurrentDate>
       </div>
       <div>
-        <button className="search-btn">
+        {showSearch && (
+          <input
+            type="text"
+            onKeyDown={changeShowResult}
+            className="search-input"
+          ></input>
+        )}
+        {showResult && <div className="search-result">User find: {result}</div>}
+        <button
+          onClick={changeShowSearch}
+          className="search-btn"
+        >
           <img
             src={searchBtn}
             alt="search-btn"
           />
         </button>
+
         <button className="user">
           <img
             src={userPhoto}
