@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 import searchBtn from "../assets/search-btn.svg";
 import userPhoto from "../assets/user-photo.png";
 import CurrentDate from "./CurrentDate";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   let date = new Date(Date.now());
@@ -29,6 +29,14 @@ const Header = () => {
       }
     }
   }
+
+  useEffect(() => {
+    if (showSearch) {
+      console.log("Поле пошуку відкрито!");
+    } else {
+      console.log("Поле пошуку задкрито!");
+    }
+  });
 
   return (
     <header>
