@@ -1,4 +1,6 @@
 import Header from "./Header";
+import NewProduct from "./NewProduct";
+import Range from "./Range";
 import Product from "./Product";
 
 function App() {
@@ -7,33 +9,34 @@ function App() {
       <Header></Header>
       <main>
         <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <Product></Product>
+          <Product
+            productName={"Enterprise"}
+            productPrice={29}
+            users={30}
+            storage={15}
+            support={"Phone and email"}
+            otherFeature={"Help center access"}
+          ></Product>
+          <Product
+            productName={"Pro"}
+            productPrice={15}
+            users={20}
+            storage={10}
+            support={"Priority email"}
+            otherFeature={"Help center access"}
+          ></Product>
+          <Product
+            productName={"Free"}
+            productPrice={0}
+            users={10}
+            storage={2}
+            support={"Email"}
+            otherFeature={"Help center access"}
+          ></Product>
 
-          {/* Example */}
-          <div className="col">
-            <div className="card mb-4 rounded-3 shadow-sm border-primary">
-              <div className="card-header py-3 text-bg-primary border-primary">
-                <h4 className="my-0 fw-normal">Enterprise</h4>
-              </div>
-              <div className="card-body">
-                <h1 className="card-title pricing-card-title">
-                  $29<small className="text-body-secondary fw-light">/mo</small>
-                </h1>
-                <ul className="list-unstyled mt-3 mb-4">
-                  <li>30 users included</li>
-                  <li>15 GB of storage</li>
-                  <li>Phone and email support</li>
-                  <li>Help center access</li>
-                </ul>
-                <button
-                  type="button"
-                  className="w-100 btn btn-lg btn-primary"
-                >
-                  Contact us
-                </button>
-              </div>
-            </div>
-          </div>
+          <NewProduct></NewProduct>
+
+          <Range></Range>
         </div>
       </main>
     </>
