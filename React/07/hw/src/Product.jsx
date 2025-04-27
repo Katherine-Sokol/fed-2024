@@ -1,6 +1,10 @@
 import React from "react";
+import { useContext } from "react";
+import { ProductContext } from "./App";
 
 function Product(props) {
+  const { chooseProduct } = useContext(ProductContext);
+
   return (
     <div className="col">
       <div className="card mb-4 rounded-3 shadow-sm border-primary">
@@ -21,6 +25,7 @@ function Product(props) {
           <button
             type="button"
             className="w-100 btn btn-lg btn-primary"
+            onClick={() => chooseProduct(props)}
           >
             Buy
           </button>
