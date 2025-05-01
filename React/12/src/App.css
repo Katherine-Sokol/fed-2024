@@ -162,10 +162,8 @@ h1 {
 
 .arrows {
   display: flex;
-}
-
-.arrow:last-child {
-  margin-left: 24px;
+  width: 90px;
+  justify-content: space-between;
 }
 
 .title h4 {
@@ -180,12 +178,9 @@ h1 {
   height: 38px;
   width: 38px;
   border: 1.42px solid rgb(167, 166, 166);
-  border-radius: 100px;
+  color: rgb(167, 166, 166);
+  border-radius: 100%;
   background: none;
-  text-align: center;
-  padding-top: 5px;
-  stroke: rgb(167, 166, 166);
-  fill: rgb(167, 166, 166);
 }
 
 .reverse {
@@ -194,8 +189,7 @@ h1 {
 
 .arrow:hover {
   border-color: rgb(255, 255, 255);
-  stroke: rgb(255, 255, 255);
-  fill: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .movies {
@@ -218,9 +212,9 @@ h1 {
 
 .movie-list {
   width: 955px;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  flex-wrap: row wrap;
+  flex-wrap: row wrap; */
 }
 
 .movie-list img {

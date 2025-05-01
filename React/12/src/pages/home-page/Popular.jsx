@@ -1,77 +1,110 @@
-import React from "react";
+import React, { useRef } from "react";
 import movieImg1 from "../../assets/img1.png";
 import movieImg2 from "../../assets/img2.png";
 import movieImg3 from "../../assets/img3.png";
 import movieImg4 from "../../assets/img4.png";
 import movieImg5 from "../../assets/img5.png";
 import AgeLimit from "./AgeLimit";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Popular = () => {
+  const swiperRef = useRef();
+
   return (
     <div>
       <div className="title">
         <h4>POPULAR THIS WEEK</h4>
         <div className="arrows">
-          <button className="arrow">
-            <svg
-              width="9.972595"
-              height="16.150002"
-              viewBox="0 0 9.9726 16.15"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            >
-              <desc>Created with Pixso.</desc>
-              <defs />
-              <path
-                id="Vector"
-                d="M8.07 16.15L9.97 14.25L3.8 8.07L9.97 1.89L8.07 0L0 8.07L8.07 16.15Z"
-                fillOpacity="1.000000"
-                fillRule="nonzero"
-              />
-            </svg>
+          <button
+            className="arrow"
+            onClick={() => swiperRef.current.slidePrev()}
+          >
+            <FontAwesomeIcon icon={faAngleLeft} />
           </button>
-          <button className="arrow reverse">
-            <svg
-              width="9.972595"
-              height="16.150002"
-              viewBox="0 0 9.9726 16.15"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            >
-              <desc>Created with Pixso.</desc>
-              <defs />
-              <path
-                id="Vector"
-                d="M8.07 16.15L9.97 14.25L3.8 8.07L9.97 1.89L8.07 0L0 8.07L8.07 16.15Z"
-                fillOpacity="1.000000"
-                fillRule="nonzero"
-              />
-            </svg>
+          <button
+            className="arrow"
+            onClick={() => swiperRef.current.slideNext()}
+          >
+            <FontAwesomeIcon icon={faAngleRight} />
           </button>
         </div>
       </div>
       <div className="movies">
         <div className="movie-list">
-          <img
-            src={movieImg1}
-            alt="img"
-          />
-          <img
-            src={movieImg2}
-            alt="img"
-          />
-          <img
-            src={movieImg3}
-            alt="img"
-          />
-          <img
-            src={movieImg4}
-            alt="img"
-          />
-          <img
-            src={movieImg5}
-            alt="img"
-          />
+          <Swiper
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+            }}
+            slidesPerView={5}
+            spaceBetween={30}
+          >
+            <SwiperSlide>
+              <img
+                src={movieImg1}
+                alt="img"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={movieImg2}
+                alt="img"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={movieImg3}
+                alt="img"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={movieImg4}
+                alt="img"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={movieImg5}
+                alt="img"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={movieImg1}
+                alt="img"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={movieImg2}
+                alt="img"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={movieImg3}
+                alt="img"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={movieImg4}
+                alt="img"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={movieImg5}
+                alt="img"
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
         <AgeLimit age="16+"></AgeLimit>
       </div>
