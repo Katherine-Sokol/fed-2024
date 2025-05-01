@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import Comment from "./Comment";
 
 function Comments({ title }) {
   const [comments, setComments] = useState([]);
@@ -27,28 +28,13 @@ function Comments({ title }) {
       <div className="d-flex justify-content-between flex-wrap">
         {comments.map((comment, index) => {
           return (
-            <div
-              className="card m-1"
-              style={{ width: "18rem" }}
+            <Comment
               key={index}
-            >
-              <div className="card-body d-flex flex-column justify-content-between">
-                <div className="d-flex flex-column mb-5">
-                  <h5 className="card-title">{comment.name}</h5>
-                  <h6 className="card-subtitle text-body-secondary">
-                    {comment.email}
-                  </h6>
-                  <p className="card-text">{comment.body}</p>
-                </div>
-
-                <button
-                  type="button"
-                  className="btn btn-dark"
-                >
-                  See more
-                </button>
-              </div>
-            </div>
+              index={index}
+              name={comment.name}
+              email={comment.email}
+              body={comment.body}
+            ></Comment>
           );
         })}
       </div>
